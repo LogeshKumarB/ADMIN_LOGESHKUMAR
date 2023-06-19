@@ -1,0 +1,271 @@
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .searchbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbox {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #555;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 5px;
+
+  }
+
+  .table {
+    width: 100%;
+    margin: auto;
+    border: 3px solid #555;
+    border-radius: 5px;
+  }
+
+  /* .table tr {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-weight: 400;
+  } */
+  .table tbody tr:hover {
+    background-color: rgb(228, 245, 248);
+  }
+
+  .c1 {
+    width: 20%;
+  }
+
+  .c2 {
+    width: 30%;
+  }
+
+  .c3 {
+    width: 15%;
+    text-transform: capitalize;
+  }
+
+  .c4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .thead {
+    font-size: 1 em;
+    background-color: rgb(226, 247, 35);
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+  .btn {
+    display: flex;
+    gap: 0.3%;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selectAll:hover {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 400px) {
+    .container {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer {
+      position: fixed;
+      display: flex;
+      align-items: flex-end;
+
+    }
+
+    .table {
+      width: 65%;
+      margin: auto;
+      border-radius: 5px;
+
+      /* display: flex; */
+    }
+  }
+
+  .icons {
+    color: rgb(228, 83, 114);
+  }
+
+  .readOnly {
+    border: none;
+    width: 90%;
+    text-overflow: ellipsis;
+  }
+
+  .selected {
+    background: hsl(0, 0%, 90%);
+  }
+
+  .selected input {
+    background: hsl(0, 0%, 90%);
+  }
+
+  label {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .selectAll {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table {
+    width: 80vw;
+    margin: auto;
+    height: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+
+
+  .table tr {
+    border-bottom: 1px solid black;
+    text-align: left;
+
+  }
+
+  .table th {
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 4px 0 4px 0;
+  }
+
+  .table tbody {
+    font-weight: 100;
+  }
+
+  .table td {
+    padding: 2px 0 4px 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* .container input {
+      width: 65%;
+    } */
+
+    .table {
+      width: 80vw;
+      margin: auto;
+      height: 77vh;
+      border-collapse: collapse;
+      table-layout: fixed;
+
+      /* display: flex; */
+    }
+
+    .height {
+      height: 90vh;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .readOnly {
+      border: none;
+      width: 90%;
+      text-overflow: ellipsis;
+    }
+
+    .pagination {
+      width: 100%;
+      font-size: medium;
+      font-weight: bold;
+      justify-content: center;
+      display: flex;
+      gap: 5%;
+      text-decoration: none;
+      list-style: none;
+      margin: auto;
+      cursor: pointer;
+    }
+
+    .active {
+      color: rgb(8, 243, 47);
+      background-color: black;
+
+
+    }
+
+  }
+
+  .readOnly {
+    border: none;
+    width: 100%;
+    font-family: serif;
+    font-size: large;
+    /* background-color:rgb(228, 245, 248) ; */
+  }
+
+  .editable {
+    border-radius: 3px;
+    width: 100%;
+    font-family: serif;
+    font-size: large;
+  }
+
+  .table tbody tr:hover .readOnly {
+    background-color: rgb(228, 245, 248);
+  }
+
+  .onSelectChange {
+    background-color: rgb(248, 209, 232);
+
+    .readOnly {
+      background-color: rgb(248, 209, 232);
+    }
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
